@@ -1,0 +1,19 @@
+<!-- electrician.ejs -->
+<%- include('include/head') %>
+</head>
+<body>
+    <div class="first-div px-3">
+        <header class="flex space-between">
+            <div class="left-nav my-2">
+                <h1 class="logo">SideHub</h1>
+            </div>
+        </header>
+    </div>
+    <div class="service-page">
+        <p class="service-description"><%- electricianData.name%></p>
+        <p class="service-description"><%= electricianData.type%></p>
+        <p class="service-description"><%= electricianData.phone_no%></p>
+        <p class="service-description"><%= electricianData.location%></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= category %> Experts</title>
+</head>
+<body>
+    <h1><%= category %> Experts</h1>
+    <ul>
+        <% experts.forEach(expert => { %>
+            <li><%= expert.name %></li>
+            Display expert details here
+        <% }); %>
+    </ul>
+</body>
+</html> -->
+
+<%- include('include/head') %>
+<title><%= pageTitle %></title>
+</head>
+<body>
+    <!-- Your HTML structure -->
+    <h1><%= pageTitle %></h1>
+    <ul>
+        <% experts.forEach(expert => { %>
+            <li><%= expert.name %></li>
+            <li><%= expert.city %></li>
+            <li><%= expert.state %></li>
+            <li><%= expert.country %></li>
+            <!-- Display expert details here, e.g., expert.city, expert.state, expert.service -->
+        <% }); %>
+    </ul>
+
+    <!-- Rest of your HTML structure -->
+
+</body>
+<%- include('include/footer') %>

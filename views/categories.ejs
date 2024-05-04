@@ -1,0 +1,122 @@
+<%- include('include/head') %>
+<title><%= pageTitle %></title>
+</head>
+<body>
+    <div class="first-div px-3">
+        <header class="flex space-between">
+            <div class="left-nav my-2">
+                <h1 class="logo">SideHub</h1>
+            </div>
+            <div class="flex right-nav space-between my-2">
+                <span class="px-1">
+                    <ion-icon name="notifications-outline" class="notification"></ion-icon>            
+                </span>
+                <span>
+                    <form action="/logout" method="get">
+                        <button class="log-in px-3 py-1 mx-2">Log out</button>
+                    </form>
+                </span>
+            </div>
+        </header>
+    </div>
+    <section class="category-function flex space-between">
+        <span class="cat-search">
+            <input type="text" name="search" placeholder="Search for service">
+            <button class="cat-searchBtn"><ion-icon class="search-icon" name="search-outline"></ion-icon></button>
+        </span>
+        <span class="cat-location mt-2">
+            <input type="text" name="location" placeholder="Search location">
+        </span>
+        <span class="filter mt-2">
+            <button><ion-icon class="filterBtn" name="options"></ion-icon></button>
+        </span>
+    </section>
+    <section class="categoryBtn my-3">
+        <button class="top-rated">
+            Top Rated <ion-icon name="star"></ion-icon>
+        </button>
+        <button class="verified mx-3">
+            Verified <ion-icon name="checkmark"></ion-icon>
+        </button>
+        <button class="ratings">
+            Ratings <ion-icon name="heart"></ion-icon>
+        </button>
+    </section>
+    <section class="category-container mt-3 px-2 py-2 flex">
+        <div class="category-container-left px-3 py-3 flex center">
+            <ion-icon class="user-img" name="person"></ion-icon>
+        </div>
+        <div class="category-container-right px-3">
+            <div class="username"><h1>Rahul</h1></div>
+            <div class="ratings-star my-1">
+                <button class="primary-Btn ratings">Ratings</button>
+                <span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </span>
+            </div>
+            <div class="address">
+                <span class="city">Pune</span>
+                <span class="state">Maharashtra</span>
+                <!-- <span class="country">Country</span> -->
+            </div>
+            <div class="service-name my-1">
+                Painter
+            </div>
+            <div class="service-bio">
+                Hello, I'm [Your Name], your local service provider. With a passion for [your specialty], I've been helping [your target audience] for [X years] by delivering top-notch [services you offer]. I take pride in my dedication to quality, professionalism, and a commitment to exceeding your expectations. Let's collaborate to bring your [specific needs] to life.
+            </div>
+            <div class="conctact-info my-1">
+                <button class="secondary-Btn">
+                    <ion-icon name="call"></ion-icon>
+                    9876543210
+                </button>
+                <button class="secondary-Btn">
+                    Send Enquiry
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="category-container mt-3 px-2 py-2 flex">
+        <div class="category-container-left px-3 py-3 flex center">
+            <ion-icon class="user-img" name="person"></ion-icon>
+        </div>
+        <div class="category-container-right px-3">
+            <div class="username"><h1>Govind</h1></div>
+            <div class="ratings-star my-1">
+                <button class="primary-Btn ratings">Ratings</button>
+                <span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </span>
+            </div>
+            <div class="address">
+                <span class="city">Nashik</span>
+                <span class="state">Maharashtra</span>
+                <!-- <span class="country">Country</span> -->
+            </div>
+            <div class="service-name my-1">
+                Car Repair
+            </div>
+            <div class="service-bio">
+                Hello, I'm [Your Name], your local service provider. With a passion for [your specialty], I've been helping [your target audience] for [X years] by delivering top-notch [services you offer]. I take pride in my dedication to quality, professionalism, and a commitment to exceeding your expectations. Let's collaborate to bring your [specific needs] to life.
+            </div>
+            <div class="conctact-info my-1">
+                <button class="secondary-Btn">
+                    <ion-icon name="call"></ion-icon>
+                    9876543210
+                </button>
+                <button class="secondary-Btn">
+                    Send Enquiry
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+<%- include('include/footer') %>

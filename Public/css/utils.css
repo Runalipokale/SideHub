@@ -1,0 +1,89 @@
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.text-align-center{
+    text-align: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.mx-1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mx-2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mx-3{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.my-1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.my-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.my-3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.px-1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.px-2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.px-3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.px-5{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.py-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.py-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.py-3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.mt-1{
+    margin-top: 20px;
+}
+.mt-2{
+    margin-top: 40px;
+}
+.mt-3{
+    margin-top: 60px;
+}
+.mt-4{
+    margin-top: 80px;
+}
+.mt-5{
+    margin-top: 100px;
+}
+.font-weight{
+    font-weight: 400;
+}

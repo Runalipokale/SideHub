@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <div class="login-container1 flex center"> 
+        <form name="login" action="/login-customer" method="post">
+            <div class="login-body flex center">
+                <div class="loginBox-1 flex center px-3 py-3">
+                    <div class="text-align-center">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                    <div class="circle5"></div>
+                    <h1>WELCOME BACK !</h1>
+                    <h4 class="my-2 font-weight">Login to access your account</h4>
+                    </div>
+                </div>
+                <div class="loginBox-2 px-3 py-3">
+                    <div class="user-box mt-1">
+                        <input type="text" name="username" placeholder="Username">
+                        <!-- <label for="username">Username</label> -->
+                    </div>
+                    <div class="user-box mt-2">
+                        <input type="password" name="password" placeholder="Password">
+                        <!-- <label for="password">Password</label> -->
+                    </div>
+                    <div class="forgot-password">
+                        Forgot Password ?
+                    </div>
+                    <div class="button flex center mt-2">
+                        <form action="/login-customer" method="post">
+                            <button class="login-btn px-3 py-1 text-align-center">Log In</button>
+                        </form>
+                    </div>
+                    <div class="register flex center my-1">
+                    </form>
+                        Don't have an account ?
+                        <form action="/nav" method="GET" name="navigation">
+                            <button style="background: none; border: none; color:#7e14a8; font-size: 0.7rem;" id="registerBtn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="login-container2"></div>
+</body>
+<script src="/Public/js/index.js"></script>
+</html>

@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Ubuntu:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --purple : #7e14a8;
+    --black : #000;
+    --green : #eef8bd;
+    --darkgreen : #3d4709;
+    --radius1 : 5px;
+    --radius2 : 12px;
+    --white : #fff;
+    --transparent : rgba(255 , 255, 255, 0.13);
+}
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+/*header*/
+.first-div{
+    margin-right: -8.2%;
+    margin-left: -8.2%;
+} 
+header{
+    background: linear-gradient(to bottom right ,#7e14a8,#a8148d);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.left-nav h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+.log-in{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: var(--radius1);
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 0.5;
+    cursor: pointer;
+}
+.log-in:hover{
+    background: transparent;
+    color: var(--white);
+}
+.notification{
+    font-size: 2rem;
+    margin-top: 10%;
+    color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.notification:hover {
+    color: #f00;
+    transform: scale(1.1) rotate(20deg);
+    animation: ring 0.3s ease-in-out;
+  }
+.profile{
+    font-size: 2.5rem !important;
+    color: var(--white);
+    cursor: pointer;
+}
+/* sidebar */
+.sidebar{
+    position: absolute;
+    top: 12%;
+    /* right: 5%; */
+    background-color: rgba(255, 255, 255, 0.217);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 3px 3px 15px var(--black);
+    height: 85vh;
+    width: 20vw;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+.sidebar hr{
+    border: 0.5px solid var(--black);
+    border-radius: 0;
+}
+.icons{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+.sidebar.active{
+    display: block;
+}
+.log-out p a,.about-us a{
+    text-decoration: none;
+    color: black;
+}
+
+/* hero-sec */
+.hero-sec{
+    color: var(--black);
+    height: 85vh;
+    background-color: #f8e7ff;
+    margin-left: -6%;
+    margin-right: -6%;
+    padding-left: 40px;
+}
+.hero-right-sec .illustration{
+    filter: contrast(100%);
+    height: 70vh;
+}
+.search input,.location input{
+    background: none;
+    border: 1px solid var(--black);
+    height: 1.5rem;
+    padding: 10px;
+    outline: none;
+}
+.search input{
+    border-radius: 6px 0 0 6px;
+}
+.location input{
+    border-radius: var(--radius1);
+}
+.search button{
+    background-color: var(--purple);
+    height: 2.9rem;
+    width: 5vw;
+    font-size: 1.5rem;
+    border: var(--purple);
+    position: relative;
+    bottom: -1%;
+    left: -1%;
+    border-radius: 0 6px 6px 0;
+    color: var(--white);
+}
+.hero-sec h1{
+    font-size: 3em;
+}
+.hero-sec h3{
+    font-size: 1.3em;
+}
+.explore{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: var(--radius1);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.5;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--purple);
+}
+.explore:hover{
+    background: transparent;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+/* Section-2 */
+.sec-2 img{
+    height: 7vh;
+    width: 3vw;
+}
+.category-sec{
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 30px 80px;
+    color: var(--black);
+    background: rgba(255, 255, 255, 0.288);
+    box-shadow: 0 0 15px var(--purple);
+    backdrop-filter: blur(30px);
+    margin-top: -10%;
+}
+/* .category-sec button{
+    background: none;
+    outline: none;
+    border: none;
+} */
+/* .category-img{
+    border-radius: var(--radius1);
+} */
+
+.service-btn{
+    border: none;
+    background: none;
+}
+/* section-3 */
+.sec-3 .card-icon{
+    font-size: 2.5rem;
+}
+.sec-3 h5{
+    font-weight: 300;
+}
+.card{
+    text-align: center;
+    width: 25vw;
+    background-color: #b54edd31;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--purple);
+    border-radius: var(--radius1);
+}
+
+/* section-4 */
+.services img{
+    height: 20vh;
+    width: 13vw;
+    border-radius: var(--radius1);
+}
+.services .img-outer img{
+    border: 1px solid var(--white);
+    border-radius: var(--radius2);
+    box-shadow: 1px 2px 15px var(--purple);
+}
+.slider-left-div{
+    width: 55%;
+    color: var(--black);
+}
+.beauty-service,.repair-service{
+    display: none;
+}
+.prev{
+    height: 40vh;
+    position: absolute;
+    right: 10%;
+    filter: blur(2px);
+    z-index: 100;
+}
+.current{
+    height: 55vh;
+    position: absolute;
+    filter: contrast(100%);
+    right: 15%;
+    z-index: 10000;
+}
+.next{
+    height: 50vh;
+    filter: blur(3px);
+    z-index: 10;
+}
+.prev-btn,.next-btn{
+    position: relative;
+    left: 25%;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    font-size: 2rem;
+    border-radius: 50%;
+    color:  var(--white);
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    height: 80vh;
+    z-index: 10;
+    margin: 0px -6% 0 -6%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d);
+}
+.footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--white);
+    font-size: 0.9rem;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+.social-links a{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.footer .quick-links a{
+    text-decoration: none;
+    color: var(--white);
+}
+.footer .quick-links li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* login-page */
+.login-container1{
+    height: 50vh;
+}
+.login-container2{
+    height: 50vh;
+    width: 110vw;
+    margin-left: -6%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d);
+}
+.loginBox-1{
+    background: linear-gradient(to top right ,#7e14a8,#a8148d);
+    height: 60vh;
+    width: 35vw;
+    color: var(--white);
+}
+.circle1{
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d,#e745c9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px var(--black);
+}
+.circle2{
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    height: 28vh;
+    width: 13vw;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d,#e745c9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px var(--black);
+}
+.circle3{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d,#e745c9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px var(--black);
+}
+.circle4{
+    position: absolute;
+    top: 60%;
+    left: 82%;
+    height: 15vh;
+    width: 7vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d,#e745c9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px var(--black);
+}
+.circle5{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    height: 18vh;
+    width: 9vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d,#e745c9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px var(--black);
+}
+.loginBox-2{
+    background-color: var(--white);
+    height: 60vh;
+    width: 25vw;
+}
+.login-body{
+    z-index: 10;
+    margin-top: 40%;
+    box-shadow: 0px 0px 30px var(--black);
+}
+.login-btn{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: var(--radius1);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.5;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background: transparent;
+    color: var(--purple);
+}
+.user-box input{
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid var(--purple);
+    background: none;
+    outline: none;
+}
+.forgot-password{
+    color: var(--purple);
+    font-size: 0.7rem;
+}
+.user-box label{
+    font-size: 0.9rem;
+    color: var(--purple);
+    position: relative;
+    top: -25px;
+    left: 0px;
+    transition: 0.5s all ease;
+    pointer-events: none;
+}
+.user-box input:focus~label{
+    transform: translateY(-50px);
+    font-size: 0.7rem;
+    top: -50px;
+}
+.register{
+    font-size: 0.7rem;
+    color: var(--purple);
+}
+
+/*Nav-Page*/
+.nav-container1{
+    height: 50vh;
+    text-align: center;
+}
+.nav-container1 h1{
+    font-size: 2.5rem;
+    color: #a8148d;
+    margin-top: 40%;
+}
+.nav-container2{
+    height: 50vh;
+    width: 110vw;
+    margin-left: -6%;
+    background: linear-gradient(to top right ,#7e14a8,#a8148d);
+}
+.nav-card img{
+    height: 35vh;
+    width: 15vw;
+}
+.nav-card{
+    background-color: var(--white);
+    box-shadow: 0 0 15px var(--black);
+    color: #a8148d;
+}
+.nav-body button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+/* category page */
+.cat-search input , .cat-location input{
+    background: none;
+    border: 1px solid var(--black);
+    height: 1.5rem;
+    padding: 10px;
+    outline: none;
+}
+.cat-search input{
+    width: 40vw;
+    border-radius: 6px 0 0 6px;
+    margin-top: 39px;
+}
+.cat-location input{
+    width: 25vw;
+    border-radius: 6px;
+}
+.cat-searchBtn{
+    background-color: var(--purple);
+    height: 2.9rem;
+    width: 5vw;
+    font-size: 1.5rem;
+    border: var(--purple);
+    position: relative;
+    bottom: -5%;
+    left: -1%;
+    border-radius: 0 6px 6px 0;
+    color: var(--white);
+}
+.filter button{
+    background: none;
+    border: none;
+    height: 2rem;
+    width: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--purple);
+}
+.filter{
+    margin-right: 3%;
+}
+.cat-search input, .cat-location input::placeholder{
+    color: var(--purple);
+}
+.categoryBtn button{
+    padding: 5px;
+    background: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: var(--radius1);
+}
+.categoryBtn button ion-icon{
+    font-size: 1.2rem;
+    margin-bottom: -3.5px;
+}
+.category-container{
+    box-shadow: 0 0 10px var(--purple);
+    height: 35vh;
+}
+.category-container-left{
+    height: 15vh;
+    width: 22vw;
+    background-color: #0000001e;
+}
+.category-container-left .user-img{
+    font-size: 5rem;
+    color: var(--black);
+}
+.primary-Btn{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: var(--radius1);
+    color: var(--white);
+}
+/* .username{
+    color: var(--black);
+} */
+.ratings{
+    padding: 5px;
+}
+/* .ratings-star span ion-icon{
+    color: var(--purple);
+} */
+.address{
+    font-size: 0.8rem;
+    color: #000000de;
+}
+.service-name{
+    font-size: 0.8rem;
+    color: #000000de;
+}
+.service-bio{
+    font-size: 0.8rem;
+    color: #00000057;
+}
+.secondary-Btn{
+    padding: 5px;
+    color: var(--purple);
+    background: none;
+    border: 1px solid var(--purple);
+    border-radius: var(--radius1);
+}
+
+/* Sign Up Page */
+.signup-container{
+    margin-left: -6%;
+    margin-right: -6%;
+    height: 90vh;
+    z-index: -1;
+}
+.svgwave-signup img{
+    height: 60vh;
+    width: 100vw;
+    margin-left: -6%;
+    margin-right: -6%;
+    z-index: -1;
+}
+.signupBox{
+    background-color: rgba(255, 255, 255, 0.217);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px var(--black);
+    color: var(--purple);
+    z-index: 1000;
+    position: absolute;
+    top: -5%;
+    left: 30%;
+}
+.user-box input::placeholder{
+    color: var(--purple);
+}
+
+
+
+
+/* service data */
+/* styles.css */
+.service-list {
+    margin: 20px;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.service-item h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.service-item p {
+    color: #666;
+}
+
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+    /* Add your styles for larger screens here */
+}
+
+/*home page bell icon animation */
+@keyframes ring {
+    0% {
+      transform: scale(1) rotate(20deg);
+    }
+    25% {
+      transform: scale(1.15) rotate(-20deg);
+    }
+    50% {
+      transform: scale(1) rotate(20deg);
+    }
+    75% {
+      transform: scale(1.15) rotate(-20deg);
+    }
+    100% {
+      transform: scale(1) rotate(20deg);
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .first-div {
+        margin-right: -5%;
+        margin-left: -5%;
+    }
+
+    .illustration{
+        position: absolute;
+        z-index: 10;
+        margin-left: -83%;
+        margin-top: -15%;
+        height: 30vh !important;
+    }
+
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .left-nav h1 {
+        font-size: 1.5rem;
+    }
+
+    .log-in {
+        font-size: 0.6rem;
+        margin-top: -5%;
+    }
+
+    .notification {
+        font-size: 1.5rem;
+    }
+
+    .profile {
+        font-size: 2rem !important;
+    }
+}
+
+/* Tablet media query (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .first-div {
+        margin-right: -6%;
+        margin-left: -6%;
+    }
+
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .left-nav h1 {
+        font-size: 2rem;
+    }
+
+    .log-in {
+        font-size: 0.5rem;
+    }
+
+    .notification {
+        font-size: 1.8rem;
+    }
+
+    .profile {
+        font-size: 2.5rem !important;
+    }
+
+    /* Add more adjustments for tablet screens as needed */
+}
+
+/* Desktop media query (larger than 1024px) */
+@media screen and (min-width: 1025px) {
+    .first-div {
+        margin-right: -8.2%;
+        margin-left: -8.2%;
+    }
+
+    header {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .left-nav h1 {
+        font-size: 2rem;
+    }
+
+    /* .log-in {
+        font-size: 0.5rem;
+    } */
+
+    .notification {
+        font-size: 2rem;
+    }
+
+    .profile {
+        font-size: 2.5rem !important;
+    }
+
+    .sidebar {
+        top: 12%;
+        width: 20vw;
+    }
+
+    /* Add more adjustments for larger screens as needed */
+}

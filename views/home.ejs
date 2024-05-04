@@ -1,0 +1,108 @@
+<%- include('include/head') %>
+<title><%= pageTitle %></title>
+</head>
+<body ng-app="app">
+    <div class="first-div px-3">
+        <header class="flex space-between">
+            <div class="left-nav my-2">
+                <h1 class="logo">SideHub</h1>
+            </div>
+            <div class="flex right-nav space-between my-2">
+                <span class="px-1">
+                    <ion-icon name="notifications-outline" class="notification"></ion-icon>            
+                </span>
+                <span>
+                    <form action="/logout" method="get">
+                        <button class="log-in px-3 py-1 mx-2">Log out</button>
+                    </form>
+                </span>
+                <span class="profile px-1" onclick="myFunction()">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </span>
+                <span id="sidebar" class="sidebar px-3 py-1">
+                    <span class="personal-info">
+                        <h3 class="name my-1" name="username">admin@gmail.com</h3>
+                        <p class="phone-no">9876543210</p>
+                        <p class="address my-1">Pune</p>
+                    </span>
+                    <hr>
+                    <span class="profile-info">
+                        <span class="favourite flex my-2">
+                            <ion-icon name="heart-outline" class="icons"></ion-icon>
+                            <p class="mx-3">Favourite</p>
+                        </span>
+                        <span class="saved flex my-2">
+                            <ion-icon name="bookmark-outline" class="icons"></ion-icon>
+                            <p class="mx-3">Saved</p>
+                        </span>
+                        <span class="edit-profile flex my-2">
+                            <ion-icon name="pencil" class="icons"></ion-icon>
+                            <p class="mx-3">Edit Profile</p>
+                        </span>
+                    </span>
+                    <hr>
+                    <span class="customer-support flex my-2">
+                        <ion-icon name="call-outline" class="icons"></ion-icon>
+                        <p class="mx-3">Customer Support</p>
+                    </span>
+                    <hr>
+                    <span class="side-info">
+                        <span class="about-us flex my-2">
+                            <ion-icon name="people-outline" class="icons"></ion-icon>
+                            <a href="/home"><p class="mx-3">About Us</p></a>
+                        </span>
+                        <span class="policy flex my-2">
+                            <ion-icon name="shield-checkmark-outline" class="icons"></ion-icon>
+                            <p class="mx-3">Policy</p>
+                        </span>
+                        <span class="feedback flex my-2">
+                            <ion-icon name="thumbs-up-outline" class="icons"></ion-icon>
+                            <p class="mx-3">Feedback</p>
+                        </span>
+                        <span class="log-out flex my-2">
+                            <ion-icon name="log-out-outline" class="icons"></ion-icon>
+                            <p class="mx-3"><a href="/">Log Out</a></p>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        </div>
+        </header>
+    <main>
+        <section class="hero-sec flex">
+            <div class="hero-left-sec mt-4 px-3">
+                <h1 class="mt-3 my-2">Search Experts</h1>
+                <h3 class="font-weight my-2">Find out the best experts around your location and hire them immediately</h3>
+                <!-- <span class="search" ng-controller="search-cntrl">
+                    <input type="text" name="search" placeholder="Search" ng-model="search">
+                    <button><ion-icon class="search-icon" name="search-outline"></ion-icon></button>
+                    <ul>
+                        <li ng-repeat="x in names | filter: search">{{x}}</li>
+                    </ul>
+                </span>
+                <span class="location mx-3">
+                    <input type="text" name="location" placeholder="Search location">
+                </span> -->
+                <form action="/categories" method="get">
+                    <button class="explore px-3 py-1 my-1">Explore</button>
+                    </form>
+            </div>
+            <div class="hero-right-sec mt-2">
+                <img class="illustration" src="/illustration.png" alt="">
+            </div>
+        </section>
+    </div>
+        <br>       
+         <!-- page categories -->
+        <%- include('include/service-data') %>
+
+        <!-- key highlights -->
+        <%- include('include/highlights') %>
+
+        <!-- slider -->
+        <%- include('include/slider') %>
+       
+    </main>
+    <%- include('include/footer') %>
+</body>
