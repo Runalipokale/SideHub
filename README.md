@@ -1,1 +1,1 @@
-# Locally
+sideHub is web application which connects service providers to their end customers. this application is build using HTML,CSS,JS,Node.Js,Express,Angular.Js,MySql database.This application is build via MVC architechture.
